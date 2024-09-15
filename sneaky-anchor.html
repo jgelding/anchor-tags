@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Anchor Security</title>
+    <script type="text/javascript">
+        function redirectToGoogle() {
+            // little does the user know that they are about to be rick rolled!
+            window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+        }
+    </script>
+</head>
+<body>
+    <a href="https://www.google.com/" onclick="redirectToGoogle(); return false;" title="https://www.google.com/">https://www.google.com/</a>
+</body>
+</html>
